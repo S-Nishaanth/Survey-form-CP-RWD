@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <header>
+      <h1 id="title">Hotel Feedback Form</h1>
+      <p id="description">Thank you for Visiting our hotel :-)</p>
+    </header>
+    <main>
+      <form id="survey-form">
+        <fieldset>
+          <legend>Personal Information</legend>
+          <label for="name" id="name-label">Name (required):</label>
+          <input type="text" id="name" name="name" required Placeholder="eg., Johndoe"><br><br>
+          <label for="email" id="email-label">Email (required):</label>
+          <input type="email" id="email" required name="email" placeholder="example@email.com"><br><br>
+          <label for="number" id="number-label">Age (optional):</label>
+          <input type="number" id="number" name="age" min="5" max="80" placeholder="eg., 15">
+        </fieldset><br>
+        <fieldset>
+          <legend>Experience details</legend>
+          <label for="dropdown">1. Who was your waiter?</label>
+          <select id="dropdown" name="waiter">
+            <option id="seb">Sebastian</option>
+            <option id="paul">Paul</option>
+            <option id="lucy">Lucy</option>
+            <option id="tim">Timothee</option>
+            <option id="luke">Luke</option>
+          </select><br>
+          <p>2. which cuisine did you select ?</p>
+          <input type="checkbox" id="ind" name="cuisine" value="indian">
+          <label for="ind">Indian</label>
+          <input type="checkbox" id="chi" name="cuisine" value="chinese">
+          <label for="chi">Chinese</label>
+          <input type="checkbox" id="ita" name="cuisine" value="italian">
+          <label for="ita">Italian</label>
+          <input type="checkbox" id="arab" name="cuisine" value="arabian">
+          <label for="arab">Arabian</label>
+          <input type="checkbox" id="jap" name="cuisine" value="japanese">
+          <label for="jap">Japanese</label>
+
+          <p>3. How was the food?</p>
+          <input type="radio" id="excellent" value="excellent" name="quality">
+          <label for="excellent">Excellent</label>
+          <input type="radio" id="good" value="good" name="quality">
+          <label for="good">Good</label>
+          <input type="radio" id="decent" value="decent" name="quality">
+          <label for="decent">Decent</label>
+          <input type="radio" id="bad" value="bad" name="quality">
+          <label for="bad">Bad</label>
+        </fieldset>
+        <label for="comments">Any extra comments ?</label><br>
+        <textarea rows="5" cols="50"></textarea><br>
+        <button type="submit" id="submit">submit</button>
+      </form>
+    </main>
+  </body>
+</html>
